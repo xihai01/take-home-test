@@ -995,6 +995,13 @@ summary::-webkit-details-marker {
   flex-shrink: 0;
 }
 
+#product-grid .grid__item {
+  border: bisque;
+  border-style: solid;
+  border-radius: 10px;
+  padding: 1.5em;
+}
+
 @media screen and (min-width: 750px) {
   .grid__item {
     width: calc(25% - var(--grid-desktop-horizontal-spacing) * 3 / 4);
