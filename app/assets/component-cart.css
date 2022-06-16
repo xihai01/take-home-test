@@ -193,6 +193,14 @@ cart-items {
   max-width: 36rem;
 }
 
+.cart__clear-button {
+  max-width: 36rem;
+  color: black;
+  background-color: white;
+  border: black;
+  border-style: solid;
+}
+
 .cart__ctas {
   text-align: center;
 }
@@ -200,6 +208,10 @@ cart-items {
 @media screen and (min-width: 750px) {
   .cart-note {
     max-width: 35rem;
+  }
+
+  .cart__ctas > *:not(noscript:first-child) + * {
+    margin-top: 0rem;
   }
 
   .cart__update-button {
