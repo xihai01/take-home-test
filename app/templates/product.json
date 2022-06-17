@@ -49,6 +49,11 @@
           "settings": {
           }
         },
+        "product_extra_info": {
+          "type": "product_extra_info",
+          "settings": {
+          }
+        },
         "collapsible-row-0": {
           "type": "collapsible_tab",
           "settings": {

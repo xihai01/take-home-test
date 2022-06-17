@@ -240,6 +240,10 @@
                 {{ product.description }}
               </div>
             {%- endif -%}
+          {%- when 'product_extra_info' -%}
+            {%- if block.settings.content != blank -%}
+              <div>{{ block.settings.content }}</div>
+            {%- endif -%}
           {%- when 'custom_liquid' -%}
             {{ block.settings.custom_liquid }}
           {%- when 'collapsible_tab' -%}
@@ -719,6 +723,19 @@
       "type": "description",
       "name": "t:sections.main-product.blocks.description.name",
       "limit": 1
+    },
+    {
+      "type": "product_extra_info",
+      "name": "t:sections.main-product.blocks.product_extra_info.name",
+      "limit": 1,
+      "settings": [
+        {
+          "type": "richtext",
+          "id": "content",
+          "info": "Include additional product info here.",
+          "label": "Product Extra Info"
+        }
+      ]
     },
     {
       "type": "share",
