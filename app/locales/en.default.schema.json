@@ -1572,7 +1572,13 @@
           "name": "Description"
         },
         "product_extra_info": {
-          "name": "Product Extra Info"
+          "name": "Product Extra Info",
+          "settings": {
+            "content": {
+              "info": "Include additional product info here.",
+              "label": "Product Extra Info"
+            }
+          }
         },
         "share": {
           "name": "Share",
